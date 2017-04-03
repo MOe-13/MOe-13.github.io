@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--SPLT--> <!--Font Format-->
+<head> 
+      <meta charset="utf-8"; name="viewport"; content="width=device-width, initial-scale=1;">  
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Mouminatou Barry">
+      <script src="/assets/jquery.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/lib/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lemonada|Lobster+Two|Merriweather|Raleway|Rochester|Sail|Sansita">
+      <link rel="stylesheet" type="text/css" href="style.css">
+                          <title>MOe</title>
+      
+<style>
+div.container {width: 100%; border: 2px #5b63fe; 
+ cursor: ;
+}
+  .header, .footer 
+  {
+    background-color: #DAA520;
+  }
+
+  p{
+  font-family: 'Sansita', sans-serif;
+  font-size:20px;
+  text-shadow: 5px 5px 5px #CCAC00;
+    
+    }
+h1{
+  font-family: 'Sail', cursive;
+  font-size:100px;
+  text-shadow: 5px 5px 5px #CCAC70;
+  }
+  
+h2{
+  font-family: 'Merriweather', serif;
+  font-size:60px
+  text-shadow: 5px 5px 5px #CCAC00;
+  }
+
+h3{font-family: 'Lemonada', cursive;
+  font-size:60px
+  text-shadow: 5px 5px 5px #CCAC00;
+    }
+  h4{    
+  font-family: 'Lobster Two', cursive;
+  font-size:70px;
+  text-shadow: 3px 3px 3px #CCAC00;
+      }
+h5{
+  font-family: 'Rochester', cursive;
+  font-size:70px;
+  text-shadow: 5px 5px 5px #CCAC00;
+        }
+h6{
+  font-family: 'Raleway', sans-serif;
+  font-size:70px;
+  text-shadow: 5px 5px 5px #CCAC00;
+        }
+div.page-header {
+    width: 200px;
+    height: 470px;
+    background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");
+    position: relative;
+    -webkit-animation: mymove 18s infinite;
+}
+    @keyframes mymove {
+    0%   {top: 0px; left: 0px; background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");}
+    25%  {top: 0px; left: 100px; background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");}
+    50%  {top: 100px; left: 100px;background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");}
+    75%  {top: 100px; left: 0px; background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");}
+    100% {top: 0px; left: 0px;background:url("https://media.chesskidfiles.com/images/user/tiny_mce/BoundingOwl/black-queen.png");}
+}
+  
+.container a {
+    font-family: 'Rochester', cursive;
+    font-size: 100px;
+    color: #000000;
+    text-align: center;
+    padding:;
+    text-decoration: none;
+}
+.fa{
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+   }    
+.fa:hover{
+  opacity: 0.3;
+  }        
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+  height:;
+  }  
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background:#be29ec;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.dropbtn {
+    background-color: #ff4d7f;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: url(smiley.gif), auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:#ff80a4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(10,120,0,0.8);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:#f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #DAA520;
+    box-sizing: border-box;   
+  }
+  
+  body{
+    background: url("http://i.giphy.com/eN9i3GNklUTZe.gif"); 
+    margin: 0; 
+    padding: 0;  
+    cursor: url(smiley.gif), auto;
+  }
+  div.nav {
+    max-width: 1600px;
+    margin: 2px;
+    padding: 1em;
+  }
+    div.nav ul 
+  {
+    color: #DAA520;
+    list-style-type: none;
+    padding: 50px;
+  }
+  
+div.jumbotron{}
+
+ div.banner{background-image:url("http://i.giphy.com/aRZ4vTsHnyW6A.gif"); 
+
+width:;
+height:30px;}
+div.container-fluid{
+  background-color: rgba(255,192,76,0.);
+  }
+  div.navbar{
+  background-color: rgba(239,91,159,0.9);
+  }
+div.navbar-header{}
+div.mainbody{
+  width: ;
+  height: ;
+  }
+div.middlebody{background-color:rgba(117,204,255.0.7);
+}
+div.endbody{
+  }
+div.footer{
+   background-image:url("http://i.giphy.com/aRZ4vTsHnyW6A.gif"); 
+   color: #f52887;
+  width:;
+  height: 150px;
+  }
+</style>
+</head>
+<!--SPLIT--> 
+<body>
+<header>
+    <div class="container"> 
+ <center><div><h1><a href="landingpage.html">MOe</a></h1></div>
+<img src="TransLogo.png"/  height="400px"></center>
+
+<div page-header></div>
+
+
+
+
+    <center><img src="https://img.clipartfox.com/ac2253e6129d0fa220e38676fd0be4fa_chessboard-perspective-02-clipart-chess-board_2400-1200.png" alt="chessboard" width="800" height="200"></header>
+     <!--DropASSETS-->
+    <nav class="navbar navbar-inverse"> 
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <ul class="nav navbar-nav">
+    </div>
+    
+    
+  <div class="dropdown" style="float:left;">
+       <h3><button class="dropbtn">Assets</button></h3>
+      <div class="dropdown-content" style="left:0;" font-size:"12px">
+          <p><a href="AssetsAd.html">Advocacy</a>
+          <a href="Assetscomm.html">Community</a>
+          <a href="Assetshobb.html">Hobbies</a></p>
+          </div></div>
+          
+      <!--DropCONTACT -->
+  <div class="dropdown" style="float:left;">
+      <h3><button class="dropbtn">Contact</button></h3>
+      <div class="dropdown-content" style="left:0;">
+      <p><a href="Con-buscard.html">Business Card</a>
+       <a href="Con-Resume.html">Resume</a>
+       <a href="Con-SM.html">Social Media</a></p>
+      </div></div>
+<!--seperate-->
+<!--DropGallery-->
+<div class="dropdown" style="float:right;">
+  <h3><button class="dropbtn">Gallery</button></h3>
+  <div class="dropdown-content">
+    <p><a href="HowTo.html">How To</a>
+    <a href="TechTips.html">Tech Tips</a>
+    <a href="Portfolio.html">Portfolio</a></p>
+  </div></div>
+ <!--DropFAQ-->
+<div class="dropdown" style="float:right;">
+    <h3><button class="dropbtn">FAQ</button></h3>
+    <div class="dropdown-content">
+      <p><a href="Problems.html">Problems</a></p>
+</div></div></ul>
+ </nav></center>
+
+
+  <!--EDIT-->
+  <div class="mainbody"><center><h1>Bio</h1></center><h2>&nbsp;</h2>
+    <div><h3>My name is Mouminatou Barry and I am a web/app developer and a graphic designer. That afternoon I met with Pete Danielsen, EVP of Programming, and he inspired me to explore opportunities within BET.<br />  My research through BET Careers led me to a position within creative, social and digital productivity. <br /> You'll find my experience includes coding, digital marketing and graphic design which has built me into the creative individual that I am today. Ideally, I'd want to express my talents through mediums that play a role in society.<br /> My long term career goal is to create apps and products that would bring the community together and educate our youth. Technology should connect us socially, but ironically it has made the majority of new generations self-centered and I want to reverse that effect.  Visiting the BET office, I found great synergy within the work environment and I envision myself working with teams full of creative minds.</h3></div>
+
+<div class="banner"></div>
+  <center><h1>Hobbies</h1></center><h2>&nbsp;</h2><h2>&nbsp;</h2></div>
+  
+<div background-color:rgba(117,204,255,0.7);>
+<center><div class="col-md-4"><h6>Basketball</h6><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonaa.dehh.donn%2Fvideos%2Fvb.100001450780935%2F1409085129149833%2F%3Ftype%3D3&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div></center>
+
+<center><div class="col-md-4"><h6>Chess</h6>
+<img src="pics/chess.jpg" style="height:400px; width:450px;">
+</div></center>
+
+<center><div class="col-md-4"><h6>Coding</h6>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonaa.dehh.donn%2Fvideos%2Fvb.100001450780935%2F1358275740897439%2F%3Ftype%3D3&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div></center></div>
+
+
+<h2>&nbsp;</h2><br />
+<div class="banner"></div>
+
+<center><h1>MOe's Summary</h1>
+  <div><iframe width="700" height="500" id="iframe_container" src="https://prezi.com/embed/9ny5oxk7ceyr/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0eWk1MHR0VHFWRkdjOTJtQU1DUk9QL253PT0&amp;landing_sign=r9WDrD1xoRrsvZ30DTE-ajzizJTWgzgYeclxwqFLj8I" frameborder="0" allowfullscreen="" webkitAllowFullScreen="" mozAllowFullscreen=""></iframe><h3>Click the link below to go to website:</h3><a href="https://prezi.com/9ny5oxk7ceyr/mbarry_mlk/#">Prezi</a>
+  <h2>&nbsp;</h2></div></center>
+
+<div class="banner"></div>
+<h2>&nbsp;</h2>
+<div class="middlebody"><center><h1>Social Media</h1></center> 
+
+  <div class="col-md-2"><a href="https://www.linkedin.com/in/successfulentrepreneur13/" class="fa fa-linkedin"></a></div>
+
+  <div class="col-md-2"><a href="https://www.facebook.com/monaa.dehh.donn" class="fa fa-facebook"></a></div>
+
+  <div class="col-md-2" class="middlebody"><a href="https://www.instagram.com/_lady.aura_/?hl=en" class="fa fa-instagram"></a></div>
+  <div class="col-md-2"><a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-google"></a><a href="https://www.youtube.com/channel/UCdXakklq85rCLAmOo08Xstw" class="fa fa-youtube"></a></div>
+</div>
+
+<h2>&nbsp;</h2><h2>&nbsp;</h2><h2>&nbsp;</h2>
+<div class="banner"></div>
+<!--FOOTER--><center><span class="glyphicon">&#xe212;</span><br /><p>Mind of a Hustler, <br /> Presence of an Entrepreneur.</p> <img src= "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/005/05e/388/38c7baf.jpg"> </center>
+<div class="footer">  
+ <center><h3> How far can your creativity take YOU ! </h3></center><i class="w3-jumbo w3-spin fa fa-home"></i></div>
+ <!--END-->
+</body>
+</html>
